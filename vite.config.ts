@@ -5,6 +5,7 @@ import 'dotenv/config'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: { host: true },
   preview: {
     port: Number(process.env.PORT),
   },
